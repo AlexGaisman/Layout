@@ -16,6 +16,8 @@ import { DataSourcePanel } from './Containers/DataSourcePanel';
 import { ComponentType } from './pages/ComponentPage';
 import { UncontrolledForm } from './ComponentTypes/UncontrolledForm';
 import { ControlledForm } from './ComponentTypes/ControlledForm';
+import { ControlledModalPanel } from './ComponentTypes/ControlledModalPanel';
+import { UncontrolledOnboardingFlowPanel } from './ComponentTypes/UncontrolledOnboardingFlowPanel';
 
 
 
@@ -46,6 +48,8 @@ export const App=()=>{
     <Route path='/components' component={ComponentType} />
     <Route path='/uncontrolledForm' component={UncontrolledForm} />
     <Route path='/controlledForm' component={ControlledForm} />
+    <Route path='/controlledModal' component={ControlledModalPanel} />
+    <Route path='/uncontrolledOnboardingFlow' component={UncontrolledOnboardingFlowPanel} />
   </Switch>
 
 
