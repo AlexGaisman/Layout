@@ -18,6 +18,8 @@ import { UncontrolledForm } from './ComponentTypes/UncontrolledForm';
 import { ControlledForm } from './ComponentTypes/ControlledForm';
 import { ControlledModalPanel } from './ComponentTypes/ControlledModalPanel';
 import { UncontrolledOnboardingFlowPanel } from './ComponentTypes/UncontrolledOnboardingFlowPanel';
+import { ControlledOnboardingFlowPanel } from './ComponentTypes/ControlledOnboardingFlowPanel';
+
 
 
 
@@ -50,6 +52,8 @@ export const App=()=>{
     <Route path='/controlledForm' component={ControlledForm} />
     <Route path='/controlledModal' component={ControlledModalPanel} />
     <Route path='/uncontrolledOnboardingFlow' component={UncontrolledOnboardingFlowPanel} />
+    <Route path='/controlledOnboardingFlow' component={ControlledOnboardingFlowPanel} />
+  
   </Switch>
 
 

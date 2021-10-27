@@ -9,6 +9,8 @@ export const ComponentType=()=>{
         <Link to='/controlledForm'>Controlled Form </Link>
         <Link to='/controlledModal'>Controlled Modal </Link>
         <Link to='/uncontrolledOnboardingFlow'>Uncontrolled Onboarding Flow </Link>
+        <Link to='/controlledOnboardingFlow'>Controlled Onboarding Flow </Link>
+
         </div>
     );
 
