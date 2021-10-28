@@ -6,7 +6,7 @@ import { ListPage } from './pages/ListPage';
 import {
   Switch,
   Route,
-  Link
+  Link, NavLink
 } from "react-router-dom";
 import { ModalPage } from './pages/ModalPage';
 import { ContainerPage } from './pages/ContainerPage';
@@ -19,6 +19,9 @@ import { ControlledForm } from './ComponentTypes/ControlledForm';
 import { ControlledModalPanel } from './ComponentTypes/ControlledModalPanel';
 import { UncontrolledOnboardingFlowPanel } from './ComponentTypes/UncontrolledOnboardingFlowPanel';
 import { ControlledOnboardingFlowPanel } from './ComponentTypes/ControlledOnboardingFlowPanel';
+import { HOComponentPage } from './pages/HOComponentsPage';
+import { HOComponentsPanel } from './HOComponents/HOComponentsPanel';
+import { hOCPrintingProps } from './HOComponents/HOCPrintingProps';
 
 
 
@@ -33,12 +36,13 @@ import { ControlledOnboardingFlowPanel } from './ComponentTypes/ControlledOnboar
 export const App=()=>{
 
   return (
-  <>
-    <Link to='/splitscreen' style={{marginRight:'10px'}}>Split Screen</Link>
-    <Link to='/lists' style={{marginRight:'10px'}}>Lists</Link>
-    <Link to='/modal' style={{marginRight:'10px'}}>Modal</Link>
-    <Link to='/containers' style={{marginRight:'10px'}}>Containers</Link>
-    <Link to='/components' style={{marginRight:'10px'}}>Components</Link>
+  <div className='navigation-header'>
+    <NavLink to='/splitscreen' style={{marginRight:'10px'}} activeClassName='active-menu-item'>Split Screen</NavLink>
+    <NavLink to='/lists' style={{marginRight:'10px'}} activeClassName='active-menu-item'>Lists</NavLink>
+    <NavLink to='/modal' style={{marginRight:'10px'}} activeClassName='active-menu-item'>Modal</NavLink>
+    <NavLink to='/containers' style={{marginRight:'10px'}} activeClassName='active-menu-item'>Containers</NavLink>
+    <NavLink to='/components' style={{marginRight:'10px'}} activeClassName='active-menu-item'>Components</NavLink>
+    <NavLink to='/hoccomponents' style={{marginRight:'10px'}} activeClassName='active-menu-item'>HOC Components</NavLink>
   <Switch>
     <Route path='/splitscreen' component={SplitScreenPage} />
     <Route path='/lists' component={ListPage} />
@@ -53,6 +57,9 @@ export const App=()=>{
     <Route path='/controlledModal' component={ControlledModalPanel} />
     <Route path='/uncontrolledOnboardingFlow' component={UncontrolledOnboardingFlowPanel} />
     <Route path='/controlledOnboardingFlow' component={ControlledOnboardingFlowPanel} />
+    <Route path='/hoccomponentspanel' component={HOComponentsPanel} />
+    <Route path='/hoccomponents' component={HOComponentPage} />
+
   
   </Switch>
 
@@ -60,7 +67,7 @@ export const App=()=>{
   
 
 
-    </>
+    </div>
   );
 };
 

@@ -12,3 +12,16 @@ code {
   background-color: #1b6ec2;
   border-color: #1861ac;
 }
+
+.active-menu-item {
+  color:white;
+  border-radius: 10px;
+  border: 2px solid #73AD21;
+  padding: 2px; 
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 11%, rgba(127,203,210,1) 28%, rgba(209,217,219,1) 51%);
+}
+
+.navigation-header {
+  height: 25px;
+}
