@@ -1,5 +1,7 @@
 This project is a sandbox for a React Paterns course from LInkedIN
 
+https://www.linkedin.com/learning/react-design-patterns/modifying-data-with-hocs?autoAdvance=true&autoSkip=true&autoplay=true&resume=false
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
